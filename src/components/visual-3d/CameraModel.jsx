@@ -7,11 +7,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 // Preload the asset
-useGLTF.preload('/camera.glb');
+useGLTF.preload(`${import.meta.env.BASE_URL}camera.glb`);
 
 export function CameraModel() {
   const modelRef = useRef();
-  const { scene } = useGLTF('/camera.glb');
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}camera.glb`);
   const { size } = useThree();
   const clock = useRef(0);
 
