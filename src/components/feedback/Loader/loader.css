@@ -1,0 +1,51 @@
+.loader-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  z-index: 9990;
+  will-change: opacity;
+}
+
+.loader-overlay-fg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  pointer-events: none;
+  will-change: opacity;
+}
+
+.loader-container {
+  width: 90vmin;
+  height: 90vmin;
+  max-width: 600px;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+/* Ensure SVG is hardware accelerated */
+.loader-container svg {
+  will-change: transform, opacity;
+}
+
+/* Ensure centering transform-origins are correctly set for scaling and rotation */
+#triangle-A,
+#triangle-B,
+#triangle-C,
+#inner-eye-stroke,
+#outer-eye-stroke,
+#lens,
+#highlights {
+  transform-origin: center center;
+}

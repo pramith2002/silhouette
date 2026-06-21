@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Media
+*.mp4
+
+# Project specific backups / variations
+silhouette_india_homepage_with_partner_motion/
+silhouette_india_inverted_monochrome_homepage/
+
+# Environment variables
+.env
+.env.*
